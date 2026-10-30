@@ -1,0 +1,4 @@
+Capture interface: Adapter for loopback traffic capture
+Capture filter: tcp port 5000
+Capture began before the verified POST; dumpcap reported increasing packet counts (14 to 39).
+Stopped capture after request.

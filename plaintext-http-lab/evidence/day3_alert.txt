@@ -1,0 +1,5 @@
+patterns: ['password=\\S+', 'api_key=\\S+', 'token=\\S+']
+transport: HTTP
+Matched credentials: ['password=********', 'api_key=********']
+ALERT: True
+Reason: Credential exposed over insecure HTTP

@@ -1,0 +1,4 @@
+Command: curl.exe -X POST -H "Content-Type: application/x-www-form-urlencoded" --data "password=Fake123&api_key=FAKE-KEY-1234" http://127.0.0.1:5000/login
+Result: HTTP 200
+Response: Lab request received; submitted values are not echoed or stored.
+Capture: evidence/plaintext-http-loopback.pcapng (loopback)

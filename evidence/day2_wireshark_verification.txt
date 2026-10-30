@@ -1,0 +1,18 @@
+Wireshark loopback verification (2026-09-30)
+
+Capture interface: Adapter for loopback traffic capture (NPF_Loopback)
+Capture filter: tcp port 5000
+Capture was active before the POST; dumpcap packet counter rose while capturing.
+Request: POST /login HTTP/1.1 to 127.0.0.1:5000
+Result: server returned HTTP 200.
+Wireshark display filter: http
+Decoded body fields: password = Fake123; api_key = FAKE-KEY-1234
+
+Artifacts alongside this log:
+- plaintext-http-loopback.pcapng: full loopback capture
+- http-filtered.pcap: saved HTTP-filtered capture in classic pcap format
+- wireshark_packet_details.txt: decoded packet details
+- wireshark_http_stream.txt: ASCII TCP stream excerpt
+- day2_request_sent.txt: request and server response transcript
+
+All credential values in this local demonstration are intentionally fake.

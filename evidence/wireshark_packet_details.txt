@@ -1,0 +1,111 @@
+Frame 30: Packet, 235 bytes on wire (1880 bits), 235 bytes captured (1880 bits) on interface \Device\NPF_Loopback, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_Loopback)
+        Interface name: \Device\NPF_Loopback
+        Interface description: Adapter for loopback traffic capture
+    Encapsulation type: NULL/Loopback (15)
+    Arrival Time: Sep 30, 2026 18:01:16.230500500 India Standard Time
+    UTC Arrival Time: Sep 30, 2026 12:31:16.230500500 UTC
+    Epoch Arrival Time: 1790771476.230500500
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 193.800 microseconds]
+    [Time since reference or first frame: 12.817937300 seconds]
+    Frame Number: 30
+    Frame Length: 235 bytes (1880 bits)
+    Capture Length: 235 bytes (1880 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: null:ip:tcp:http:urlencoded-form]
+    Character encoding: ASCII (0)
+Null/Loopback
+    Family: IP (2)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 231
+    Identification: 0x3915 (14613)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0xc2f9 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 55947, Dst Port: 5000, Seq: 1, Ack: 1, Len: 191
+    Source Port: 55947
+    Destination Port: 5000
+    [Stream index: 3]
+    [Stream Packet Number: 4]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 0... = Data: Absent
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ···ASS]
+    [TCP Segment Len: 191]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 3009194939
+    [Next Sequence Number: 192    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 2937736798
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0x24ad [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 288.100 microseconds]
+        [Time since previous frame in this TCP stream: 193.800 microseconds]
+    [SEQ/ACK analysis]
+        [iRTT: 94.300 microseconds]
+        [Bytes in flight: 191]
+        [Bytes sent since last PSH flag: 191]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (191 bytes)
+Hypertext Transfer Protocol
+    POST /login HTTP/1.1\r\n
+        Request Method: POST
+        Request URI: /login
+        Request Version: HTTP/1.1
+    Host: 127.0.0.1:5000\r\n
+    User-Agent: curl/8.21.0\r\n
+    Accept: */*\r\n
+    Content-Type: application/x-www-form-urlencoded\r\n
+    Content-Length: 38\r\n
+        [Content length: 38]
+    \r\n
+    [Full request URI: http://127.0.0.1:5000/login]
+    File Data: 38 bytes
+HTML Form URL Encoded: application/x-www-form-urlencoded
+    Form item: "password" = "Fake123"
+        Key: password
+        Value: Fake123
+    Form item: "api_key" = "FAKE-KEY-1234"
+        Key: api_key
+        Value: FAKE-KEY-1234
+

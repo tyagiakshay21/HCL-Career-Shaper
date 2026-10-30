@@ -1,0 +1,14 @@
+Plaintext HTTP lab frontend verification — 2026-09-30
+
+Live dashboard:
+- Started the existing Flask app on 127.0.0.1:5000 and confirmed GET /dashboard returned HTTP 200.
+- Sent one local POST /login using fake-only password and API-key values; it returned HTTP 200 and persisted a High finding.
+- Refreshed /dashboard in the browser. The newest High finding appeared with the expected severity badge.
+- Confirmed the dashboard and findings.json contain only field names and a sanitized summary; neither submitted value was stored or displayed.
+- The dashboard page was captured in the task browser after refresh.
+
+Automated route checks with an isolated temporary findings file:
+- GET / and GET /dashboard returned HTTP 200.
+- Fake credential fields produced one persisted High finding.
+- The rendered dashboard omitted both submitted values.
+- A no-credential POST returned HTTP 200 and added no finding.

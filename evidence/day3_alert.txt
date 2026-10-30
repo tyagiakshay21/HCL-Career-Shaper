@@ -1,0 +1,2 @@
+EXPOSURE: credential pattern 'password' found over plain HTTP (insecure transport)
+EXPOSURE: credential pattern 'api_key' found over plain HTTP (insecure transport)
